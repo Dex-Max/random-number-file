@@ -35,6 +35,7 @@
 			this.numbersLabel = new System.Windows.Forms.Label();
 			this.totalLabel = new System.Windows.Forms.Label();
 			this.numbersListBox = new System.Windows.Forms.ListBox();
+			this.saveFile = new System.Windows.Forms.SaveFileDialog();
 			this.SuspendLayout();
 			// 
 			// generateLabel
@@ -61,6 +62,7 @@
 			this.writeButton.TabIndex = 2;
 			this.writeButton.Text = "Generate and Save";
 			this.writeButton.UseVisualStyleBackColor = true;
+			this.writeButton.Click += new System.EventHandler(this.writeButton_Click);
 			// 
 			// openButton
 			// 
@@ -99,6 +101,7 @@
 			// 
 			// MainForm
 			// 
+			this.AcceptButton = this.writeButton;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(532, 335);
@@ -111,6 +114,7 @@
 			this.Controls.Add(this.generateLabel);
 			this.Name = "MainForm";
 			this.Text = "Random Number File";
+			this.Load += new System.EventHandler(this.MainForm_Load);
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -125,6 +129,7 @@
 		private System.Windows.Forms.Label numbersLabel;
 		private System.Windows.Forms.Label totalLabel;
 		private System.Windows.Forms.ListBox numbersListBox;
+		private System.Windows.Forms.SaveFileDialog saveFile;
 	}
 }
 
