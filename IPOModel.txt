@@ -1,0 +1,13 @@
+Input:
+Number of numbers to generate
+File location
+File name
+
+Processing:
+Generate random numbers
+Add up all numbers
+
+Output: 
+Number of numbers to generate
+Total of numbers
+List of random numbers
