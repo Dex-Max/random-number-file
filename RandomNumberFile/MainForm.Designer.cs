@@ -36,6 +36,7 @@
 			this.totalLabel = new System.Windows.Forms.Label();
 			this.numbersListBox = new System.Windows.Forms.ListBox();
 			this.saveFile = new System.Windows.Forms.SaveFileDialog();
+			this.openFile = new System.Windows.Forms.OpenFileDialog();
 			this.SuspendLayout();
 			// 
 			// generateLabel
@@ -72,6 +73,7 @@
 			this.openButton.TabIndex = 3;
 			this.openButton.Text = "Open";
 			this.openButton.UseVisualStyleBackColor = true;
+			this.openButton.Click += new System.EventHandler(this.openButton_Click);
 			// 
 			// numbersLabel
 			// 
@@ -98,6 +100,10 @@
 			this.numbersListBox.Name = "numbersListBox";
 			this.numbersListBox.Size = new System.Drawing.Size(120, 147);
 			this.numbersListBox.TabIndex = 6;
+			// 
+			// openFile
+			// 
+			this.openFile.FileName = "openFileDialog1";
 			// 
 			// MainForm
 			// 
@@ -130,6 +136,7 @@
 		private System.Windows.Forms.Label totalLabel;
 		private System.Windows.Forms.ListBox numbersListBox;
 		private System.Windows.Forms.SaveFileDialog saveFile;
+		private System.Windows.Forms.OpenFileDialog openFile;
 	}
 }
 
