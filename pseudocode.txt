@@ -1,0 +1,12 @@
+File Writer:
+1. Get user input for number of numbers to generate and assign to variable
+2. Generate random numbers and write to file
+3. Display SaveFileDialog
+4. Save file name and save to specified location
+
+File Reader:
+1. Display OpenFileDialog
+2. Add up all of the numbers
+3. Display numbers
+4. Display number of numbers
+5. Display total of numbers
